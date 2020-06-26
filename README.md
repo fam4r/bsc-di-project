@@ -13,8 +13,7 @@ Install [Pipenv](https://github.com/pypa/pipenv).
 
 ```bash
 $ pipenv install
-$ pipenv shell
-(venv) $ ipython kernel install --user --name=diproj --display-name "Py3 DIA - Project"
+$ pipenv run ipython kernel install --user --name=diproj --display-name "Py3 DIA - Project"
 ```
 
 ## Run
@@ -22,8 +21,7 @@ $ pipenv shell
 Execute
 
 ```bash
-$ pipenv shell
-(venv) $ jupyter notebook
+$ pipenv run jupyter notebook
 ```
 
 Then a tab should have been opened in your browser.
