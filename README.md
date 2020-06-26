@@ -39,8 +39,7 @@ the chosen name).
 ### Fix arff dataset
 
 ```bash
-$ wget https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Training%20Dataset.arff
-$ mv Training\ Dataset.arff PhishingWebsites.arff
+$ wget https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Training%20Dataset.arff -O PhishingWebsites.arff
 $ sed -i "s/{ /{/g" PhishingWebsites.arff
 $ sed -i "s/ }/}/g" PhishingWebsites.arff
 ```
@@ -48,5 +47,5 @@ $ sed -i "s/ }/}/g" PhishingWebsites.arff
 ### Convert arff dataset to csv
 
 ```bash
-$ ./arff2csv.py
+$ pipenv run ./arff2csv.py
 ```
