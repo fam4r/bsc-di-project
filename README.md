@@ -30,3 +30,25 @@ Then a tab should have been opened in your browser.
 
 If you used the virtual environment installation, choose the kernel `diproj` (or
 the chosen name).
+
+## Project description
+
+### References
+
+- Original source: [UCI](https://archive.ics.uci.edu/ml/datasets/phishing+websites)
+- Described dataset on [OpenML](https://www.openml.org/d/4534)
+
+### Fix arff dataset
+
+```bash
+$ wget https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Training%20Dataset.arff
+$ mv Training\ Dataset.arff PhishingWebsites.arff
+$ sed -i "s/{ /{/g" PhishingWebsites.arff
+$ sed -i "s/ }/}/g" PhishingWebsites.arff
+```
+
+### Convert arff dataset to csv
+
+```bash
+$ ./arff2csv.py
+```

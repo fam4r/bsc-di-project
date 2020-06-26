@@ -11,6 +11,7 @@ jupyterlab = "*"
 numpy = "*"
 pandas = "*"
 matplotlib = "*"
+scipy = "*"
 
 [requires]
 python_version = "3.8"
