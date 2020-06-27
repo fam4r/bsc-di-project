@@ -33,15 +33,14 @@ the chosen name).
 
 ### References
 
-- Original source: [UCI](https://archive.ics.uci.edu/ml/datasets/phishing+websites)
-- Described dataset on [OpenML](https://www.openml.org/d/4534)
+- [Malicious and Benign Websites: Classify by application and network features](https://www.kaggle.com/xwolf12/malicious-and-benign-websites)
 
 ### Fix arff dataset
 
 ```bash
-$ wget https://archive.ics.uci.edu/ml/machine-learning-databases/00327/Training%20Dataset.arff -O PhishingWebsites.arff
-$ sed -i "s/{ /{/g" PhishingWebsites.arff
-$ sed -i "s/ }/}/g" PhishingWebsites.arff
+$ wget <ds_url.arff> -O <ds_name>.arff
+$ sed -i "s/{ /{/g" <ds_name>.arff
+$ sed -i "s/ }/}/g" <ds_name>.arff
 ```
 
 ### Convert arff dataset to csv
