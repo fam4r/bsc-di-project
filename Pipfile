@@ -15,6 +15,9 @@ scipy = "*"
 seaborn = "*"
 sklearn = "*"
 imblearn = "*"
+pandoc = "*"
+pylatex = "*"
+nbconvert = "*"
 
 [requires]
 python_version = "3.8"
